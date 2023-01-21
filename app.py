@@ -2,6 +2,9 @@ from flask import Flask, request, Response
 import youtube_dl
 
 app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Welcome to youtube download api!'
 
 @app.route('/download', methods=['GET'])
 def download_video():
