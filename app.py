@@ -25,4 +25,4 @@ def download_video():
                     headers={"Content-disposition": "attachment; filename={}.mp3".format(ydl.extract_info(url)["title"])})
 
 if __name__ == '__main__':
-    app.run()
+     app.run(debug=True)
